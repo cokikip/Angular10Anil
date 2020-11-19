@@ -7,4 +7,27 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'anil';
+  names: string = "Collins Kiplagat"
+  siteName= window.location.href
+
+
+  getName() {
+    return this.names;
+  }
+  obj = [
+    {
+      name: "Coki",
+      age: 25
+    },
+    {
+      name: "Coki",
+      age: 25
+    },
+    {
+      name: "Coki",
+      age: 25
+    }
+  ]
+
+
 }

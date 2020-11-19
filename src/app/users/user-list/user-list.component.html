@@ -1,0 +1,40 @@
+<div>
+  greaar
+  <button (click)="getName(collins)">My name</button>
+  <br>
+  KeyDown is starts after releasing the key shows data
+  <br>
+  <input type="text" (keyup)="myEvent('My Key up event')">
+  <br>
+
+
+  <input type="text" #box (keyup)="myEvent(box.value)">
+  <br>
+  With the enter
+  <br>
+
+  <input type="text" #box (keyup.enter)="myEvent(box.value)">
+  <br>
+
+  KeyDown is starts showing data whenever you press the key
+  <br>
+  <input type="text" #box (keydown)="myEvent(box.value)">
+  <br>
+  Using on blur event
+  <br>
+  <input type="text" #box (blur)="myEvent(box.value)">
+  <br>
+  <input type="text" #box (keyup.space)="myEvent(box.value)">
+  <br>
+  Year: {{today.getFullYear() }}
+  Date: {{today.getDate()}}
+  Monthe {{today.getMonth()}}
+  Day: {{today.getDay()}}
+  Hours: {{today.getHours()}}
+  Minutes: {{today.getMinutes()}}
+  Seconds: {{today.getSeconds()}}
+  <br>
+
+
+
+</div>
