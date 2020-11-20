@@ -1,9 +1,22 @@
 <nav>
-  <ul>
-    <li><a routerLink="/list">List User</a></li>
-    <li > <a routerLink="/conditions">Conditional</a> </li>
-    <li > <a routerLink="/switch">Switch</a> </li>
-    <li > <a routerLink="/forloop">For Loop</a> </li>
-    <li > <a routerLink="/simpleform">Simple Form</a> </li>
+  <ul ngbNav #nav="ngbNav" class="nav-tabs">
+    <li ngbNavItem>
+      <a ngbNavLink routerLink="/list">List User</a>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink routerLink="/conditions">Conditional</a>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink routerLink="/switch">Second</a>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink routerLink="/forloop">For Loop</a>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink routerLink="/simpleform">Simple Form</a>
+    </li>
   </ul>
+  <div [ngbNavOutlet]="nav"></div>
 </nav>
+
+
