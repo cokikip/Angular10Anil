@@ -1,3 +1,4 @@
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
 import { SimpleFormComponent } from './simple-form/simple-form.component';
 import { ForLoopComponent } from './for-loop/for-loop.component';
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'switch', component: SwitchComponent },
   { path: 'forloop', component: ForLoopComponent },
   { path: 'simpleform', component: SimpleFormComponent },
-  { path: '', component: HomeComponent }
+  { path: '', component: HomeComponent },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

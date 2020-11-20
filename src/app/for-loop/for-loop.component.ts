@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ForLoopComponent implements OnInit {
   names =["Collins","Kiplagat","Kiprono"]
+  today = Date.now()
+  money = 2500;
 
   users= [
     {

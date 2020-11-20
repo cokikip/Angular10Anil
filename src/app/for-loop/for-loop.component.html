@@ -2,7 +2,27 @@
   <h3>for loop</h3>
   For loop with an aray of string
   <div *ngFor="let name of names">
-    <h4>{{name}}</h4>
+
+    //Use of uppercase pipe
+    <h4>{{name|uppercase}}</h4>
+    <h4>{{name|slice:0:5}}</h4>
+
+    <h4>{{name|lowercase}}</h4>
+    //How to use two pipes
+    <h4>{{name|titlecase|json}}</h4>
+    <h4>{{today|date}}</h4>
+    <h4>{{today|date:'shortTime'}}</h4>
+
+    <h4>{{today|date:'fullDate'}}</h4>
+    <h6>{{money|currency:'KSH'}}</h6>
+    <h6>{{money|currency:'USD'}}</h6>
+    <h6>{{money|currency:'CAD'}}</h6>
+    <h6>{{money|currency:'SA'}}</h6>
+    <h6>{{money|currency:'TZ'}}</h6>
+    <h6>{{money|currency:'UG'}}</h6>
+
+
+
   </div>
 
   Forloop with an array of objects
