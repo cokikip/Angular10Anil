@@ -14,7 +14,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatButtonModule } from '@angular/material/button';
+import {MatListModule} from '@angular/material/list'
+import {MatChipsModule} from '@angular/material/chips'
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +34,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     UsersModule,
     FormsModule,
     NgbModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatListModule,
+    MatChipsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

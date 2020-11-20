@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-user-list',
@@ -9,6 +9,7 @@ export class UserListComponent implements OnInit {
   collins = "Collins"
   usersData:string=""
   disableBtn=true
+  @Input() hero;
 
   constructor() { }
 

@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'anil';
   names: string = "Collins Kiplagat"
   siteName= window.location.href
+  dataName="Hero"
 
 
   getName() {
