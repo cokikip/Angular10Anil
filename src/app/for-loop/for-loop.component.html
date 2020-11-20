@@ -1,0 +1,23 @@
+<div>
+  <h3>for loop</h3>
+  For loop with an aray of string
+  <div *ngFor="let name of names">
+    <h4>{{name}}</h4>
+  </div>
+
+  Forloop with an array of objects
+  <table border="2px">
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Career</th>
+    </tr>
+
+    <tr *ngFor="let user of users">
+      <td>{{user.name}}</td>
+      <td>{{user.age}}</td>
+      <td>{{user.career}}</td>
+    </tr>
+  </table>
+
+</div>

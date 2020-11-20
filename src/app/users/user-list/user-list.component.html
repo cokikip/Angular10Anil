@@ -18,13 +18,18 @@
 
   KeyDown is starts showing data whenever you press the key
   <br>
-  <input type="text" #box (keydown)="myEvent(box.value)">
+  <input type="text" #box (keydown)="myEvent(box.value)" ngModel="collins">
   <br>
   Using on blur event
   <br>
-  <input type="text" #box (blur)="myEvent(box.value)">
+
+  Property binding can handle the disable attribute but the string interpolation cannot
   <br>
-  <input type="text" #box (keyup.space)="myEvent(box.value)">
+  <input type="text" #box (blur)="myEvent(box.value)" [disabled]="disableBtn" value={{collins}}>
+  <br>
+  <input type="text" #box (keyup.space)="myEvent(box.value)" disabled={{disableBtn}} [value]="collins">
+  <br>
+  <button (click)="enableBtn()">Enable Button</button>
   <br>
   Year: {{today.getFullYear() }}
   Date: {{today.getDate()}}
@@ -33,7 +38,13 @@
   Hours: {{today.getHours()}}
   Minutes: {{today.getMinutes()}}
   Seconds: {{today.getSeconds()}}
+
+  <input type="text" #box >
   <br>
+  <button (click)="getValue(box.value)">Save User</button>
+  <br>
+  <br>
+  {{usersData}}
 
 
 

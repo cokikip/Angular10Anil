@@ -1,0 +1,30 @@
+<div>
+  <h4>Conditional</h4>
+  <div *ngIf="show else elseBlock">
+    <h4>Hello</h4>
+  </div>
+  <ng-template #elseBlock>
+    <h1>Else Block</h1>
+  </ng-template>
+
+  Using the div id ro display the data if certian condition is met
+  <div *ngIf="names=='yes'; then ifBlock else elseBlock1">
+    <h1>Collins</h1>
+  </div>
+  <ng-template #ifBlock>
+    <h1>Coki</h1>
+  </ng-template>
+  <ng-template #elseBlock1>
+    <h1>Collinji</h1>
+  </ng-template>
+
+  <ng-template [ngIf]="colors=='red'">
+    <h1 class="red">Red Block</h1>
+  </ng-template>
+  <ng-template [ngIf]="colors=='green'">
+    <h1 class="green">Green Block</h1>
+  </ng-template>
+  <ng-template [ngIf]="colors=='blue'">
+    <h1 class="blue">Blue Block</h1>
+  </ng-template>
+</div>

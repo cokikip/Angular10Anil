@@ -1,0 +1,40 @@
+<div>
+  Switch statement with an array of string
+  <h3>Switch</h3>
+  <div *ngFor="let color of colors" [ngSwitch]="color">
+    <h2 class="red" *ngSwitchCase="'Red'">
+      Red
+    </h2>
+    <h2 class="green" *ngSwitchCase="'Green'">
+      Green
+    </h2>
+
+    <h2 class="blue" *ngSwitchCase="'Blue'">
+      Blue
+    </h2>
+
+    <h2 *ngSwitchDefault>
+      Default
+    </h2>
+  </div>
+
+  <br>
+  Switch statement with a variable
+
+  <div [ngSwitch]="c">
+    <h2 class="red" *ngSwitchCase="'Red'">
+      Red
+    </h2>
+    <h2 class="green" *ngSwitchCase="'Green'">
+      Green
+    </h2>
+
+    <h2 class="blue" *ngSwitchCase="'Blue'">
+      Blue
+    </h2>
+
+    <h2 *ngSwitchDefault>
+      Default
+    </h2>
+  </div>
+</div>

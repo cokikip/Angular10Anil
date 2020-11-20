@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserListComponent implements OnInit {
   collins = "Collins"
+  usersData:string=""
+  disableBtn=true
 
   constructor() { }
 
@@ -19,5 +21,14 @@ export class UserListComponent implements OnInit {
   myEvent(detail){
     console.log(detail);
 
+  }
+  getValue(data){
+    console.log(data);
+
+    this.usersData=data;
+  }
+
+  enableBtn(){
+    this.disableBtn=false;
   }
 }
