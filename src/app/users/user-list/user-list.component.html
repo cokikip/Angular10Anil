@@ -39,7 +39,7 @@
   Minutes: {{today.getMinutes()}}
   Seconds: {{today.getSeconds()}}
 
-  <input type="text" #box >
+  <input type="text" #box>
   <br>
   <button (click)="getValue(box.value)">Save User</button>
   <br>
@@ -47,7 +47,7 @@
   {{usersData}}
 
 
-
-
   {{hero}}
+  <br>
+  <button (click)="sendData()">Send data</button>
 </div>

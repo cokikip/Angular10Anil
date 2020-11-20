@@ -10,7 +10,12 @@ export class AppComponent {
   names: string = "Collins Kiplagat"
   siteName= window.location.href
   dataName="Hero"
+  n:string
 
+  parentFunction(val){
+    this.n=val
+    console.log(val);
+  }
 
   getName() {
     return this.names;
