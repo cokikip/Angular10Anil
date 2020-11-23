@@ -45,6 +45,20 @@
   <br>
   <br>
   {{usersData}}
+  {{user|json}}
+  {{comments|json}}
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Comment</th>
+      <th>PostID</th>
+    </tr>
+    <tr *ngFor="let comment of comments">
+      <td>{{comment.id}}</td>
+      <td>{{comment.body}}</td>
+      <td>{{comment.postId}}</td>
+    </tr>
+  </table>
 
 
   {{hero}}

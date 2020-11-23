@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'forloop', component: ForLoopComponent },
   { path: 'simpleform', component: SimpleFormComponent },
   { path: '', component: HomeComponent },
+  { path: 'users', component: UserListComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 

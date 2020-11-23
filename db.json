@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Java begginer",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "Spring boot Advance topics",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "Congrats",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "Buy new drive",
+      "postId": 1
+    },
+    {
+      "id": 3,
+      "body": "Eat lunch",
+      "postId": 1
+    },
+    {
+      "id": 4,
+      "body": "Save some money",
+      "postId": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
