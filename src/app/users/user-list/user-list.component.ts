@@ -14,6 +14,8 @@ export class UserListComponent implements OnInit {
   user={}
   comments:any =[];
   commentSearch:string
+  page = 1
+  pageSize=10
   @Input() hero;
   @Output() parentFunction:EventEmitter<any> = new EventEmitter();
 

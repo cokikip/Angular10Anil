@@ -45,21 +45,26 @@
   <br>
   <br>
   {{usersData}}
-  {{user}}
-  {{comments}}
-  <input type="search" name="commentSearch" [(ngModel)]="commentSearch" >
+  {{user|json}}
+  {{comments|json}}
+  <input type="search" name="commentSearch" [(ngModel)]="commentSearch" placeholder="Search for commnets...">
   <table>
     <tr>
       <th>ID</th>
       <th>Comment</th>
       <th>PostID</th>
     </tr>
-    <tr *ngFor="let comment of comments | commentTextFilter:commentSearch">
+    <tr *ngFor="let comment of comments | commentTextFilter:commentSearch|slice: (page-1) * pageSize : page * pageSize">
       <td>{{comment.id}}</td>
       <td>{{comment.body}}</td>
       <td>{{comment.postId}}</td>
     </tr>
   </table>
+  <ngb-pagination
+  [(page)]="page"
+  [pageSize]="pageSize"
+  [collectionSize]="comments.length">
+</ngb-pagination>
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ab cumque aut esse nobis nisi aliquam velit. Quos accusamus culpa blanditiis nisi aliquam fugiat amet corrupti deserunt molestiae eveniet? Perspiciatis?
 
 

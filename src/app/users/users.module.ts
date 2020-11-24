@@ -1,3 +1,4 @@
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommentTextFilterPipe } from './../shared/comment-text-filter.pipe';
 import { UserListComponent } from './user-list/user-list.component';
 import { NgModule } from '@angular/core';
@@ -16,6 +17,7 @@ import { UsersRoutingModule } from './users-routing.module';
     CommonModule,
     UsersRoutingModule,
     FormsModule,
+    NgbModule
 
   ],
   exports:[
