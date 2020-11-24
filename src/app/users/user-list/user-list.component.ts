@@ -1,5 +1,7 @@
+
 import { UsersService } from './../users.service';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+
 @Component({
   selector: 'app-user-list',
   templateUrl: './user-list.component.html',
@@ -11,6 +13,7 @@ export class UserListComponent implements OnInit {
   disableBtn=true
   user={}
   comments:any =[];
+  commentSearch:string
   @Input() hero;
   @Output() parentFunction:EventEmitter<any> = new EventEmitter();
 

@@ -45,20 +45,22 @@
   <br>
   <br>
   {{usersData}}
-  {{user|json}}
-  {{comments|json}}
+  {{user}}
+  {{comments}}
+  <input type="search" name="commentSearch" [(ngModel)]="commentSearch" >
   <table>
     <tr>
       <th>ID</th>
       <th>Comment</th>
       <th>PostID</th>
     </tr>
-    <tr *ngFor="let comment of comments">
+    <tr *ngFor="let comment of comments | commentTextFilter:commentSearch">
       <td>{{comment.id}}</td>
       <td>{{comment.body}}</td>
       <td>{{comment.postId}}</td>
     </tr>
   </table>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ab cumque aut esse nobis nisi aliquam velit. Quos accusamus culpa blanditiis nisi aliquam fugiat amet corrupti deserunt molestiae eveniet? Perspiciatis?
 
 
   {{hero}}

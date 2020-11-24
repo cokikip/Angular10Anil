@@ -1,3 +1,4 @@
+import { UsersModule } from './users/users.module';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -5,7 +6,6 @@ import {HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UsersModule } from './users/users.module';
 import { ConditionalComponent } from './conditional/conditional.component';
 import { SwitchComponent } from './switch/switch.component';
 import { ForLoopComponent } from './for-loop/for-loop.component';
@@ -18,7 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import {MatListModule} from '@angular/material/list'
 import {MatChipsModule} from '@angular/material/chips';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,16 +34,15 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UsersModule,
     FormsModule,
     NgbModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatListModule,
     MatChipsModule,
-    HttpClientModule
-
-  ],
+    HttpClientModule,
+    UsersModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

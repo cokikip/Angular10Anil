@@ -9,7 +9,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'list', component: UserListComponent },
+
+  { path: 'lists', component: UserListComponent },
   { path: 'conditions', component: ConditionalComponent },
   { path: 'switch', component: SwitchComponent },
   { path: 'forloop', component: ForLoopComponent },
